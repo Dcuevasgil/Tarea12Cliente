@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/app.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Formulario de la API de productos</title>
+</head>
+<body>
+    <form id="configForm" onsubmit="handleSubmit(event)">
+        <label for="baseUrl">Base URL:</label>
+        <input type="text" id="baseUrl" name="baseUrl" required placeholder="http://localhost:8080"><br>
+        
+        <label for="getEndpoint">Get All Endpoint</label>
+        <input type="text" id="getEndpoint" name="getEndpoint" placeholder="/api/v1/products/"><br>
+        
+        <label for="insertEndpoint">Insert Endpoint</label>
+        <input type="text" id="insertEndpoint" name="insertEndpoint" placeholder="/api/v1/products/insert/"><br>
+        
+        <label for="editEndpoint">Edit Endpoint</label>
+        <input type="text" id="editEndpoint" name="editEndpoint" placeholder="/api/v1/products/edit/{id}"><br>
+        
+        <label for="deleteEndpoint">Delete Endpoint:</label>
+        <input type="text" id="deleteEndpoint" name="deleteEndpoint" placeholder="/api/v1/products/delete/{id}"><br>
+        
+        <button class="insert">Insertar Producto</button>
+        <button class="edit">Editar Producto</button>
+        <button class="delete">Eliminar Producto</button>
+    </form>    
+</body>
+</html>
