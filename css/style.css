@@ -1,0 +1,85 @@
+*, *::before, *::after {
+    /* Include padding and border in box's size calculation*/
+    box-sizing: border-box;
+}
+
+* {
+    /* Prevent grid and flex problems  */
+    min-width: 0;
+}
+
+body {
+    /* Make the body the same height as your viewport*/
+    min-height: 100dvh;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+#cardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    max-width: 30dvw;
+    max-height: 10dvw;
+    object-fit: contain;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+}
+
+.insert {
+    background-color: #28a745;
+}
+
+.edit {
+    background-color: #00bfff;
+}
+
+.delete {
+    background-color: #dc3545;
+}
